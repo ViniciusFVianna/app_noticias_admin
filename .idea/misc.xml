@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Projetos/Andriod/app_noticias_admin/app/src/main/res/layout/activity_main.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projetos/Andriod/app_noticias_admin/app/src/main/res/drawable/button_bacground.xml" value="0.174" />
+        <entry key="..\:/Projetos/Andriod/app_noticias_admin/app/src/main/res/drawable/edt_round_corner.xml" value="0.174" />
+        <entry key="..\:/Projetos/Andriod/app_noticias_admin/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
   </component>

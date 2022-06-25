@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_200"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:text="@string/mainTitle"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleDimen"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_round_corner"
+        android:hint="@string/hint_title"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:autofillHints="name"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/edt_round_corner"
+        android:hint="@string/hint_desc"
+        android:padding="15dp"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:autofillHints="name"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtPubDt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_round_corner"
+        android:hint="@string/hint_pub_dt"
+        android:padding="15dp"
+        android:autofillHints="name"
+        android:maxLength="10"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_round_corner"
+        android:hint="@string/hint_author"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:autofillHints="name"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnPub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:text="@string/pub_text_btn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
+</ScrollView>
